@@ -1,10 +1,11 @@
 
-const heading = document.querySelector('#heading2')
-const button=document.querySelector('button')
-const changeText = function(changeHeading){
-    heading.textContent="U mad bro?!"
-   }
+function submitName(){
+    const t = document.querySelector('.second')
+  const name = document.getElementById("text").value
+  //console.log("yo---" + name)
 
-button.addEventListener('click', changeText)
+  t.textContent = name
+}
 
-
+const button = document.querySelector('button')
+button.addEventListener('click',submitName)
